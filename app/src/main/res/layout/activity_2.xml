@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarQwest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mediumPurple"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textQwest1"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8pt"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarQwest"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="MissingConstraints">
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/fon"
+           >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/textQwest"
+               android:textSize="20dp"
+               android:textStyle="bold"></TextView>
+
+           <RadioButton
+               android:id="@+id/qwest1RB1"
+               android:layout_width="116dp"
+               android:layout_height="wrap_content"
+               android:checked="false"
+               android:text="1345"
+               android:textSize="16dp"/>
+           <RadioButton
+               android:id="@+id/qwest1RB2"
+               android:layout_width="116dp"
+               android:layout_height="wrap_content"
+               android:checked="false"
+               android:text="1385"
+               android:textSize="16dp"/>
+           <RadioButton
+               android:id="@+id/qwest1RB3"
+               android:layout_width="116dp"
+               android:layout_height="wrap_content"
+               android:checked="false"
+               android:text="1445"
+               android:textSize="16dp"/>
+           <RadioButton
+               android:id="@+id/qwest1RB4"
+               android:layout_width="116dp"
+               android:layout_height="wrap_content"
+               android:checked="false"
+               android:text="1380"
+               android:textSize="16dp"/>
+           <RadioButton
+               android:id="@+id/qwest1RB5"
+               android:layout_width="116dp"
+               android:layout_height="wrap_content"
+               android:checked="false"
+               android:text="1245"
+               android:textSize="16dp"/>
+       </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageBodyTypeIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/konung1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonQwest1BTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutQ" />
+
+    <Button
+        android:id="@+id/buttonQwest1BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4pt"
+        android:backgroundTint="@color/blue"
+        android:text="@string/button_qwest"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

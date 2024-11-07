@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DZhistori</string>
+    <string name="button_start">Старт викторины</string>
+    <string name="exit">Выход из приложения</string>
+    <string name="infoStr">Информация о приложении</string>
+    <string name="textStart">Проверь свои познания в Истории</string>
+    <string name="button_qwest">Следующий вопрос</string>
+    <string name="textQwest">Выберите правильный ответ: </string>
+    <string name="textQwest1">Укажите дату Куликовской битвы</string>
+    <string name="textQwest2">"Место битвы при Каталунских полях "</string>
+    <string name="textQwest3">Где родился Киевский князь Владимир</string>
+    <string name="textQwest4">Даты правления Ивана Грозного</string>
+    <string name="textQwest5">Самый молодой Император России</string>
+    <string name="button_qwest5">Узнать результат</string>
+    <string name="textResultStatus">Ваш уровень</string>
+    <string name="textResult">Ваши баллы</string>
+    <string name="buttonFin">Выход из программы</string>
+</resources>
