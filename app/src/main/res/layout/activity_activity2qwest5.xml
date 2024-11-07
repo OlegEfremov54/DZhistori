@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Activity2qwest5">
 
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarQwest5"
         android:layout_width="match_parent"
@@ -59,47 +58,51 @@
                 android:textStyle="bold"></TextView>
 
             <RadioButton
+                android:id="@+id/qwest5RB1"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:checked="true"
+                android:checked="false"
                 android:text="Иван Антонович"
                 android:textSize="16dp"/>
             <RadioButton
+                android:id="@+id/qwest5RB2"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:checked="true"
+                android:checked="false"
                 android:text="Павел Петрович"
                 android:textSize="16dp"/>
             <RadioButton
+                android:id="@+id/qwest5RB3"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:checked="true"
+                android:checked="false"
                 android:text="Николай Александрович"
                 android:textSize="16dp"/>
             <RadioButton
+                android:id="@+id/qwest5RB4"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:checked="true"
+                android:checked="false"
                 android:text="Петр Алексеевич"
                 android:textSize="16dp"/>
             <RadioButton
+                android:id="@+id/qwest5RB5"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:checked="true"
+                android:checked="false"
                 android:text="Анна Иоановна"
                 android:textSize="16dp"/>
         </RadioGroup>
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageBodyTypeIV"
+        android:id="@+id/imageBodyV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/konung5"
         app:layout_constraintBottom_toTopOf="@+id/buttonQwest5BTN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
@@ -117,9 +120,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

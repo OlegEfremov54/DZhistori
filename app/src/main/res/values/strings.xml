@@ -4,7 +4,7 @@
     <string name="exit">Выход из приложения</string>
     <string name="infoStr">Информация о приложении</string>
     <string name="textStart">Проверь свои познания в Истории</string>
-    <string name="button_qwest">Следующий вопрос</string>
+    <string name="button_qwest">Нет ответа. Следующий вопрос</string>
     <string name="textQwest">Выберите правильный ответ: </string>
     <string name="textQwest1">Укажите дату Куликовской битвы</string>
     <string name="textQwest2">"Место битвы при Каталунских полях "</string>

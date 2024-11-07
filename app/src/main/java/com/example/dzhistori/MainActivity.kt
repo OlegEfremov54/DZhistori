@@ -13,9 +13,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var toolbarMain: Toolbar
     private lateinit var buttonStartBTN: Button
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         toolbarMain = findViewById(R.id.toolbarMain)
         setSupportActionBar(toolbarMain)
         title = " Я историк"
@@ -36,10 +37,9 @@ class MainActivity : AppCompatActivity() {
         buttonStartBTN.setOnClickListener { view ->
             val intent = Intent(this, Activity2::class.java)
             startActivity(intent)
-
-
         }
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main,menu)
         return true
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.infoMenuMain -> {
-                Toast.makeText(applicationContext, "Автор Ефремов О.В. Создан 6.11.2024",
+                Toast.makeText(applicationContext, "Автор Ефремов О.В. Создан 7.11.2024",
                     Toast.LENGTH_LONG).show()
             }
             R.id.exitMenuMain ->{
@@ -59,6 +59,5 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
 
 }

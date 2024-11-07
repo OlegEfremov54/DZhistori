@@ -15,6 +15,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Activity2 : AppCompatActivity() {
+
     private lateinit var toolbarQwest: Toolbar
     private lateinit var buttonQwest1BTN:Button
     private lateinit var qwest1RB1:RadioButton
@@ -32,6 +33,7 @@ class Activity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         toolbarQwest = findViewById(R.id.toolbarQwest)
         setSupportActionBar(toolbarQwest)
         title = " Я историк"
@@ -66,6 +68,7 @@ class Activity2 : AppCompatActivity() {
                     }
                 }
             }
+
         qwest1RB1.setOnClickListener(radioButtonClickListener)
         qwest1RB2.setOnClickListener(radioButtonClickListener)
         qwest1RB3.setOnClickListener(radioButtonClickListener)
@@ -78,9 +81,9 @@ class Activity2 : AppCompatActivity() {
             intent.putExtra("result", result)
             startActivity(intent)
             finish()
-
         }
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_qvest,menu)
         return true
@@ -89,7 +92,7 @@ class Activity2 : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.infoMenuMain -> {
-                Toast.makeText(applicationContext, "Автор Ефремов О.В. Создан 6.11.2024",
+                Toast.makeText(applicationContext, "Автор Ефремов О.В. Создан 7.11.2024",
                     Toast.LENGTH_LONG).show()
             }
             R.id.exitMenuMain ->{

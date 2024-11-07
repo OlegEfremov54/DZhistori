@@ -15,6 +15,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Activity2qwest2 : AppCompatActivity() {
+
     private lateinit var toolbarQwest2: Toolbar
     private lateinit var buttonQwest2BTN: Button
     private lateinit var qwest2RB1: RadioButton
@@ -32,6 +33,7 @@ class Activity2qwest2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         toolbarQwest2 = findViewById(R.id.toolbarQwest2)
         setSupportActionBar(toolbarQwest2)
         title = " Я историк"
@@ -66,20 +68,18 @@ class Activity2qwest2 : AppCompatActivity() {
                     }
                 }
             }
+
         qwest2RB1.setOnClickListener(radioButtonClickListener)
         qwest2RB2.setOnClickListener(radioButtonClickListener)
         qwest2RB3.setOnClickListener(radioButtonClickListener)
         qwest2RB4.setOnClickListener(radioButtonClickListener)
         qwest2RB5.setOnClickListener(radioButtonClickListener)
 
-
-
         buttonQwest2BTN = findViewById(R.id.buttonQwest2BTN)
         buttonQwest2BTN.setOnClickListener { view ->
             val intent = Intent(this, Activity2qwest3::class.java)
+            intent.putExtra("result", result)
             startActivity(intent)
-
-
         }
 
     }
@@ -92,7 +92,7 @@ class Activity2qwest2 : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.infoMenuMain -> {
-                Toast.makeText(applicationContext, "Автор Ефремов О.В. Создан 6.11.2024",
+                Toast.makeText(applicationContext, "Автор Ефремов О.В. Создан 7.11.2024",
                     Toast.LENGTH_LONG).show()
             }
             R.id.exitMenuMain ->{

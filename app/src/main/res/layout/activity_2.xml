@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Activity2">
 
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarQwest"
         android:layout_width="match_parent"
@@ -97,14 +96,13 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageBodyTypeIV"
+        android:id="@+id/imageBodyII"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/konung1"
         app:layout_constraintBottom_toTopOf="@+id/buttonQwest1BTN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutQ" />
 

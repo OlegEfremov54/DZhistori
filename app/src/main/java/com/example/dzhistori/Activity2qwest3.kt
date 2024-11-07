@@ -15,6 +15,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Activity2qwest3 : AppCompatActivity() {
+
     private lateinit var toolbarQwest3: Toolbar
     private lateinit var buttonQwest3BTN: Button
     private lateinit var qwest3RB1: RadioButton
@@ -32,6 +33,7 @@ class Activity2qwest3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         toolbarQwest3 = findViewById(R.id.toolbarQwest3)
         setSupportActionBar(toolbarQwest3)
         title = " Я историк"
@@ -66,21 +68,18 @@ class Activity2qwest3 : AppCompatActivity() {
                     }
                 }
             }
+
         qwest3RB1.setOnClickListener(radioButtonClickListener)
         qwest3RB2.setOnClickListener(radioButtonClickListener)
         qwest3RB3.setOnClickListener(radioButtonClickListener)
         qwest3RB4.setOnClickListener(radioButtonClickListener)
         qwest3RB5.setOnClickListener(radioButtonClickListener)
 
-
-
-
         buttonQwest3BTN = findViewById(R.id.buttonQwest3BTN)
         buttonQwest3BTN.setOnClickListener { view ->
             val intent = Intent(this, Activity2qwest4::class.java)
+            intent.putExtra("result", result)
             startActivity(intent)
-
-
         }
 
     }
